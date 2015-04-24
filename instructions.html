@@ -1,0 +1,35 @@
+<header><i class="fa fa-times" id="closeDialog"></i><h2>Instructions</h2></header>
+<div class="content">
+	<p>This is a JavaScript implementation of A* algorithm. All of the options on the side panel are explained as follows:</p>
+	<p>
+		<strong>New World</strong>
+		Completely resets all nodes and creates a new world.
+		<strong>Redraw World</strong>
+		Redraws the world and re-animates the character.
+		<strong>Show Borders</strong>
+		Shows black borders around each node for a better view.
+		<strong>Distance Function</strong>
+		Changes the heuristics function the algorithm is going to use next time it is initiated. The available functions are:
+		<ol>
+			<li>
+				<span>Euclidean</span>
+				<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>d</mi><mo>=</mo><msqrt><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>-</mo><msub><mi>x</mi><mn>2</mn></msub><msup><mo>)</mo><mn>2</mn></msup><mo>+</mo><mo>(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>-</mo><msub><mi>y</mi><mn>2</mn></msub><msup><mo>)</mo><mn>2</mn></msup></msqrt></math>
+			</li>
+			<li>
+				<span>Euclidean Free</span>
+			</li>
+			<li>
+				<span>Manhattan</span>
+				<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>d</mi><mo>=</mo><mo>|</mo><msub><mi>x</mi><mn>1</mn></msub><mo>-</mo><msub><mi>x</mi><mn>2</mn></msub><mo>|</mo><mo>+</mo><mo>|</mo><msub><mi>y</mi><mn>1</mn></msub><mo>-</mo><msub><mi>y</mi><mn>2</mn></msub><mo>|</mo></math>
+			</li>
+			<li>
+				<span>Chebyshev</span>
+				<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>d</mi><mo>=</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo>(</mo><mo>|</mo><msub><mi>x</mi><mn>1</mn></msub><mo>-</mo><msub><mi>x</mi><mn>2</mn></msub><mo>|</mo><mo>,</mo><mo>|</mo><msub><mi>y</mi><mn>1</mn></msub><mo>-</mo><msub><mi>y</mi><mn>2</mn></msub><mo>|</mo><mo>)</mo></math>
+			</li>
+			<li>
+				<span>Chebyshev Free</span>
+			</li>
+		</ol>
+		Free functions allow "squizeeng through" obstacles.
+	</p>
+</div>

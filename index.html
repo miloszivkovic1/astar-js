@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<title>A* Path Finder</title>
+	<meta charset="UTF-8" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+	<section class="controls">
+		<header>
+			<i class="fa fa-minus-square-o" id="minimize"></i>
+			<h1>A* Path Finder</h1>
+		</header>
+		<fieldset>
+			<legend><i class="fa fa-area-chart"></i>World</legend>
+			<div>
+				<button id="createWorld" class="fa">New World</button>
+				<button id="redrawWorld" class="fa">Redraw World</button>
+			</div>
+			<div>
+				<input type="checkbox" id="toggleBorder" />
+				<label for="toggleBorder">Show Borders</label>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend><i class="fa fa-gear"></i>Algorithm Options</legend>
+			<label for=distance>Distance Function</label>
+			<select id="distance">
+				<option value="euclidean">Euclidean</option>
+				<option value="euclidean-free">Euclidean Free</option>
+				<option value="chebyshev">Chebyshev</option>
+				<option value="chebyshev-free">Chebyshev Free</option>
+				<option value="manhattan" selected>Manhattan</option>
+			</select>
+			<button id="instructions">Instructions</button>
+		</fieldset>
+		<fieldset>
+			<legend><i class="fa fa-terminal"></i>Log</legend>
+			<ul id="log"></ul>
+		</fieldset>
+		<fieldset>
+			<legend><i class="fa fa-code"></i>About</legend>
+			<div>
+				<button id="aboutAuthor">About</button>
+				<button id="aboutCredits">Credits</button>
+			</div>
+		</fieldset>
+		<fieldset class="connect">
+			<legend><i class="fa fa-share-alt"></i>Connect</legend>
+			<a href="mailto:meelosh.me@gmail.com" target="_blank" class="fa fa-envelope"></a>
+			<a href="https://rs.linkedin.com/in/miloszivkovic1" target="_blank" class="fa fa-linkedin"></a>
+			<a href="https://github.com/miloszivkovic1" target="_blank" class="fa fa-github"></a>
+		</fieldset>
+	</section>
+	<section class="dialog"></section>
+	<div id="canvas"></div>
+</body>
+</html>
